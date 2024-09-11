@@ -84,7 +84,7 @@ body {
 
 /* Background Logo Section */
 .background-logo-section {
-    background-image: url('https://raw.githubusercontent.com/MyAlkalineVeganJourney/J2E/main/MAVJ%20digital%20logo.JPG');
+    background-image: url('https://raw.githubusercontent.com/MyAlkalineVeganJourney/HF/images/MAVJDigitalLogo.JPG');
     background-size: cover;
     background-position: center;
     padding: 50px 0;
@@ -476,7 +476,6 @@ footer p {
 
 .content-boxes-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -516,4 +515,3 @@ footer p {
     background-clip: content-box, border-box;
     height: 150px;
 }
-

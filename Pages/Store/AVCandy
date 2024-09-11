@@ -10,7 +10,7 @@
     <div class="logo-section">
         <div class="title-section">
             <h1 class="title">💦    My Alkaline Vegan Journey   💦</h1>
-            <img src="https://raw.githubusercontent.com/MyAlkalineVeganJourney/HF/Images/MAVJDigitalLogo.JPG" alt="MAVJDigitalLogo" class="MAVJDigitalLogo">
+            <img src="https://raw.githubusercontent.com/MyAlkalineVeganJourney/HF/Images/MAVJ%20digital%20logo.JPG" alt="MAVJ Digital Logo" class="MAVJDigitalLogo">
 
 
             <p>"presents"</p>
@@ -27,13 +27,13 @@
             <a href="index.html">Home</a>
             <div class="dropdown-content">
                 <a href="mission.html">Mission and Goals</a>
-                <a href="aboutus.html">About Us</a>
+                <a href="about-us.html">About Us</a>
                 <a href="locations.html">Locations</a>
-                <a href="businessplan.html">Business Plan</a>
+                <a href="business-plan.html">Business Plan</a>
             </div>
         </li>
         <li class="dropdown">
-            <a href="J2EGala.html">Journey 2 Enlightenment</a>
+            <a href="Journey2Enlightenment.html">Journey 2 Enlightenment</a>
             <div class="dropdown-content">
                 <a href="J2EWhat.html">What?</a>
                 <a href="J2EWhereWhen.html">When?</a>
@@ -43,7 +43,7 @@
                 <a href="J2EExcursions.html">Excursions</a>
                 <a href="food.html">Food</a>
                 <a href="weather.html">Weather</a>
-                <a href="whattobring.html">What to Bring</a>
+                <a href="what-to-bring.html">What to Bring</a>
                 <a href="invest.html">Invest</a>
             </div>
         </li>
@@ -51,12 +51,12 @@
             <a href="MAVJStore.html">Store</a>
             <div class="dropdown-content">
                 <a href="merchandise.html">Merchandise</a>
-                <a href="seamoss.html">Sea Moss</a>
+                <a href="sea-moss.html">Sea Moss</a>
                 <a href="detox.html">Detox</a>
-                <a href="avcandy.html">Alkaline Vegan Candy</a>
-                <a href="avcookiesbrownies.html">Alkaline Vegan</a>
-                <a href="avdrinks.html">Alkaline Vegan Snacks</a>
-                <a href="oilsinfusions.html">Oils</a>
+                <a href="alkaline-vegan-candy.html">Alkaline Vegan Candy</a>
+                <a href="alkaline-vegan.html">Alkaline Vegan</a>
+                <a href="alkaline-vegan-snacks.html">Alkaline Vegan Snacks</a>
+                <a href="oils.html">Oils</a>
                 <a href="seeds.html">Seeds</a>
                 <a href="herbs.html">Herbs</a>
                 <a href="consultations.html">Consultations</a>

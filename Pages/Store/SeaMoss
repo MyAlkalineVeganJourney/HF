@@ -10,7 +10,7 @@
     <div class="logo-section">
         <div class="title-section">
             <h1 class="title">💦    My Alkaline Vegan Journey   💦</h1>
-            <img src="https://raw.githubusercontent.com/MyAlkalineVeganJourney/HF/Images/MAVJDigitalLogo.JPG" alt="MAVJDigitalLogo" class="MAVJDigitalLogo">
+            <img src="https://raw.githubusercontent.com/MyAlkalineVeganJourney/HF/Images/MAVJ%20digital%20logo.JPG" alt="MAVJ Digital Logo" class="MAVJDigitalLogo">
 
 
             <p>"presents"</p>
@@ -43,7 +43,7 @@
                 <a href="J2EExcursions.html">Excursions</a>
                 <a href="food.html">Food</a>
                 <a href="weather.html">Weather</a>
-                <a href="whattobring.html">What to Bring</a>
+                <a href="what-to-bring.html">What to Bring</a>
                 <a href="invest.html">Invest</a>
             </div>
         </li>
@@ -51,12 +51,12 @@
             <a href="MAVJStore.html">Store</a>
             <div class="dropdown-content">
                 <a href="merchandise.html">Merchandise</a>
-                <a href="seamoss.html">Sea Moss</a>
+                <a href="sea-moss.html">Sea Moss</a>
                 <a href="detox.html">Detox</a>
-                <a href="avcandy.html">Alkaline Vegan Candy</a>
-                <a href="avcookiesbrownies.html">Alkaline Vegan</a>
-                <a href="avdrinks.html">Alkaline Vegan Snacks</a>
-                <a href="oilsinfusions.html">Oils</a>
+                <a href="alkaline-vegan-candy.html">Alkaline Vegan Candy</a>
+                <a href="alkaline-vegan.html">Alkaline Vegan</a>
+                <a href="alkaline-vegan-snacks.html">Alkaline Vegan Snacks</a>
+                <a href="oils.html">Oils</a>
                 <a href="seeds.html">Seeds</a>
                 <a href="herbs.html">Herbs</a>
                 <a href="consultations.html">Consultations</a>
@@ -104,24 +104,23 @@
     <section class="background-logo-section">
         <!-- Content Boxes on top of the background image -->
         <div class="main-container">
-            <div class="inner-box accommodation">
-              <h2>Accommodations</h2>
-              <p>Details about tent options, Airbnb, and guest homes...</p>
+            <div class="inner-box Journey2Enlightenment">
+                <h2>🌴Journey 2 Enlightenment🌴</h2>
+                <p>Details about the 7 Days All Inclusive Global Gala in St. Lucia 11/11/24.</p>
+            </div>
+            <div class="inner-box Sea-Moss">
+              <h2>Sea Moss</h2>
+              <p>Raw, Gel, All Different Colors</p>
             </div>
             
-            <div class="inner-box transportation">
-              <h2>Transportation</h2>
-              <p>Information on flight options, links to airlines...</p>
+            <div class="inner-box Detox">
+              <h2>Detoxifications</h2>
+              <p>Fibroids, Chelation, Duck Flower, Parasites, Herpes,and More...</p>
             </div>
           
-            <div class="inner-box event-pricing">
-              <h2>Event Pricing</h2>
-              <p>Details about ticket pricing, activities, and all-inclusive options...</p>
-            </div>
-          
-            <div class="inner-box sponsors">
-              <h2>Sponsorship Opportunities</h2>
-              <p>Details about sponsorship tiers, benefits, and contributions...</p>
+            <div class="inner-box Herbs">
+              <h2>St.Lucian Herbs and More</h2>
+              <p>SourSop Leaves, Blue Vervain, Red Clover, and More...</p>
             </div>
             
             <div class="inner-box shopping-cart">
@@ -141,9 +140,11 @@
                 <form id="accommodation-form">
                     <label for="accommodation-type">Select Accommodation Type:</label>
                     <select id="accommodation-type" name="accommodation-type" onchange="updatePrice()">
-                        <option value="3000">Standard Room - $3000</option>
-                        <option value="3200">Deluxe Room - $3200</option>
-                        <option value="3500">Suite - $3500</option>
+                        <option value="3000">Four Man Tent - $3000</option>
+                        <option value="3200">Two Man Tent - $3200</option>
+                        <option value="3500">Air BnB Style Home - $3500</option>
+                        <option value="3800">Guest Home - $3800</option>
+
                     </select>
         
                     <div id="price-display">
