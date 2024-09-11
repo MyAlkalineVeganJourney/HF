@@ -1,0 +1,519 @@
+/* Basic styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+}
+
+/* Font Face */
+@font-face {
+    font-family: 'Autumn Flowers';
+    src: url('fonts/AutumnFlowers.ttf') format('truetype');
+}
+
+/* Event Title */
+.event-title {
+    font-size: 62px;
+    color: #FFD700; /* Gold color for the text */
+    font-family: 'Great Vibes', cursive; /* Elegant script font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for depth */
+    margin-top: 10px; /* Space above the text */
+}
+
+/* Background image and title section */
+.background-image {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.title-section {
+    color: #ffffff;
+}
+
+.title {
+    font-size: 42px;
+    color: #FFD700; /* Metallic gold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for title */
+    margin-bottom: 10px;
+}
+
+/* Logo Section */
+.logo-section {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for the header section */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Add space below the header if needed */
+    
+    /* Multicolored border using gradients */
+    border: 8px solid;
+     /* Multicolored border using gradients */
+     border: 8px solid;
+     border-image: linear-gradient(to right, #FF0000, #FFD700, #008000, blue, indigo, violet) 1; /* Red, Gold, Green gradient */
+ 
+}
+
+.MAVJDigitalLogo {
+    width: 350px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Presents Section */
+.presents {
+    color: #FFD700;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+/* Buy Now Button */
+.buy-now-btn {
+    background-color: #FFD700; /* Metallic gold */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Background Logo Section */
+.background-logo-section {
+    background-image: url('https://raw.githubusercontent.com/MyAlkalineVeganJourney/J2E/main/MAVJ%20digital%20logo.JPG');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 400px; /* Adjust height as necessary */
+}
+
+/* Content Boxes Positioned Over the Background Logo */
+.content-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the content boxes */
+    color: white;
+    padding: 20px;
+    border-radius: 10px; 
+    width: 250px; /* Adjust box size */
+    text-align: center;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3); /* Add some shadow for depth */
+    border: 8px solid;
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000) 1; /* Red, Gold, Green gradient */
+}
+
+.inner-content-box {
+    color: #50C878; /* Emerald green color */
+    font-family: 'Arial', sans-serif; /* Ensure readability with a simple font */
+}
+
+.content-box h2 {
+    margin-bottom: 10px;
+}
+
+.content-box p {
+    font-size: 16px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 8px solid;
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000,blue, indigo, violet) 1; /* Red, Gold, Green gradient */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: #333;
+}
+
+main h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+main p {
+    color: #f4f4f4;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Video and photo gallery styles */
+.video-container, .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: 8px solid;
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000,blue, indigo, violet) 1; /* Red, Gold, Green gradient */
+}
+
+video, .gallery img {
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border: 8px solid;
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000,blue, indigo, violet) 1; /* Red, Gold, Green gradient */
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-media-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media-links a:hover {
+    text-decoration: underline;
+}
+
+/* Grid-based layout */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    margin-top: -50px; /* Overlaying logo slightly */
+    padding: 20px;
+}
+
+/* Inner Box Styles */
+.inner-box {
+    background-color: rgba(255, 255, 255, 0.05); /* Slightly transparent black */
+    border: 2px solid #d4af37; /* Metallic gold border */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(212, 175, 55, 0.6); /* Soft gold shadow */
+    transition: all 0.3s ease-in-out;
+    border: 8px solid;
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000,blue, indigo, violet) 1; /* Red, Gold, Green gradient */
+}
+
+.inner-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #d4af37; /* Metallic gold titles */
+    margin-bottom: 15px;
+}
+
+.inner-box p {
+    font-family: 'Open Sans', sans-serif;
+    color: #bfbfbf; /* Light gray text for readability */
+}
+
+/* Inner Box Types */
+.inner-box.accommodation {
+    border-left: 8px solid #008000; /* Green accent for accommodations */
+}
+
+.inner-box.transportation {
+    border-left: 5px solid #ff0000; /* Red accent for transportation */
+}
+
+.inner-box.event-pricing {
+    border-left: 5px solid #ffcc00; /* Yellow accent for event pricing */
+}
+
+.inner-box.sponsors {
+    border-left: 5px solid #008000; /* Green accent for sponsors */
+}
+
+.inner-box.shopping-cart {
+    border-left: 5px solid #ff0000; /* Red accent for shopping cart */
+}
+
+/* Hover Effects */
+.inner-box:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly brighter on hover */
+    transform: scale(1.02); /* Subtle scale effect */
+    transition: all 0.3s ease-in-out;
+}
+/* Multicolor border style */
+.multicolor-border {
+    border: 4px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* Accommodations section styling */
+.accommodations-section {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 8px;
+    border: 8px solid;
+    border-image-slice: 1;
+    border-width: 8px;
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.accommodations-title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Content boxes section styling */
+.content-boxes-section {
+    background-color: black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    border: 4px solid;
+    border-image-slice: 1;
+    border-width: 8px;
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* Content boxes styling */
+.content-boxes-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.content-box {
+    background-color: black;
+    height: 150px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+/* Multicolored border */
+.border-wrapper, .content-boxes-wrapper {
+    border: 4px solid transparent;
+    background-image: linear-gradient(black, black),
+                      linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Accommodations Section */
+#accommodations {
+    background-color: black;
+    padding: 40px 20px;
+}
+
+#accommodations h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#accommodation-form {
+    text-align: center;
+    color: rgb(44, 99, 9);
+}
+
+#accommodation-form label, 
+#accommodation-form select, 
+#accommodation-form button {
+    display: block;
+    margin: 10px auto;
+}
+
+#accommodation-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#accommodation-form button:hover {
+    background-color: #555;
+}
+
+#accommodation-form p a {
+    color: white;
+    text-decoration: underline;
+}
+/* Multicolored border */
+.border-wrapper {
+    border: 4px solid transparent;
+    background-image: linear-gradient(black, black),
+                      linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Accommodations Section */
+#accommodations {
+    background-color: black;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.accommodations-section {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#accommodations h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#accommodation-form {
+    text-align: center;
+    color: white;
+}
+
+#accommodation-form label, 
+#accommodation-form select, 
+#accommodation-form button {
+    display: block;
+    margin: 10px auto;
+}
+
+#accommodation-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#accommodation-form button:hover {
+    background-color: #555;
+}
+
+#accommodation-form p a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Content Boxes Area */
+#content-boxes-area {
+    background-color: black;
+    padding: 40px 20px;
+}
+
+.content-boxes-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.content-box {
+    background-color: black;
+    border: 4px solid transparent;
+    background-image: linear-gradient(black, black),
+                      linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    height: 180px;
+}
+
+/* Menu Bar */
+.menu-bar {
+    background-color: #000000; /* Update to true black */
+}
+
+/* Content Boxes Area */
+#content-boxes-area {
+    background-color: black;
+    padding: 40px 20px;
+}
+
+.content-boxes-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content-box {
+    background-color: black;
+    border: 4px solid transparent;
+    background-image: linear-gradient(black, black),
+                      linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    height: 150px;
+}
+

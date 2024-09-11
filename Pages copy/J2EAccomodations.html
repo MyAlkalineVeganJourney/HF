@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J2E</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        window.onload = function() {
+            // Convert all image paths in the document
+            const images = document.querySelectorAll('img');
+            images.forEach(image => {
+                const src = image.getAttribute('src');
+                if (src && src.startsWith('https://raw.githubusercontent.com/MyAlkalineVeganJourney/J2E/main/')) {
+                    image.setAttribute('src', src.replace('main/', 'Images/'));
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <div class="logo-section">
+        <div class="title-section">
+            <h1 class="title">💦    My Alkaline Vegan Journey   💦</h1>
+            <img src="https://raw.githubusercontent.com/MyAlkalineVeganJourney/J2E/main/MAVJ%20digital%20logo.JPG" alt="MAVJ Digital Logo" class="MAVJDigitalLogo">
+            <p>"presents"</p>
+
+            <h2 class="event-title">Journey 2 Enlightenment</h2>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+    </div>
+</div>
+          
+<nav>
+    <ul>
+        <li class="dropdown">
+            <a href="index.html">Home</a>
+            <div class="dropdown-content">
+                <a href="mission.html">Mission and Goals</a>
+                <a href="about-us.html">About Us</a>
+                <a href="locations.html">Locations</a>
+                <a href="business-plan.html">Business Plan</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="Journey2Enlightenment.html">Journey 2 Enlightenment</a>
+            <div class="dropdown-content">
+                <a href="J2EWhat.html">What?</a>
+                <a href="J2EWhereWhen.html">When?</a>
+                <a href="J2EWhereWhen.html">Where?</a>
+                <a href="J2ETransportation.html">Transportation</a>
+                <a href="J2EAccomodations.html">Accommodations</a>
+                <a href="J2EExcursions.html">Excursions</a>
+                <a href="food.html">Food</a>
+                <a href="weather.html">Weather</a>
+                <a href="what-to-bring.html">What to Bring</a>
+                <a href="invest.html">Invest</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="MAVJStore.html">Store</a>
+            <div class="dropdown-content">
+                <a href="merchandise.html">Merchandise</a>
+                <a href="sea-moss.html">Sea Moss</a>
+                <a href="detox.html">Detox</a>
+                <a href="alkaline-vegan-candy.html">Alkaline Vegan Candy</a>
+                <a href="alkaline-vegan.html">Alkaline Vegan</a>
+                <a href="alkaline-vegan-snacks.html">Alkaline Vegan Snacks</a>
+                <a href="oils.html">Oils</a>
+                <a href="seeds.html">Seeds</a>
+                <a href="herbs.html">Herbs</a>
+                <a href="consultations.html">Consultations</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="invest.html">Invest/Work with Us</a>
+            <div class="dropdown-content">
+                <a href="crops.html">Crops</a>
+                <a href="living.html">Living</a>
+                <a href="donate.html">Donate</a>
+                <a href="join.html">Join</a>
+                <a href="partnership.html">Partnership</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="live-broadcast.html">Live Broadcast</a>
+            <div class="dropdown-content">
+                <a href="dates.html">Dates and Times</a>
+                <a href="connect.html">How to Connect</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="search.html">Search</a>
+            <div class="dropdown-content">
+                <a href="herbs.html">Herbs</a>
+                <a href="illnesses.html">Illnesses</a>
+                <a href="recipes.html">Recipes</a>
+            </div>
+        </li>
+        <li><a href="cart.html">Shopping Cart</a></li>
+        <li class="dropdown">
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown-content">
+                <a href="social-media.html">Social Media</a>
+                <a href="phone.html">Phone</a>
+                <a href="email.html">Email</a>
+                <a href="live-chat.html">Live Chat</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+</header>
+    <!-- New section for the second logo -->
+    <section class="background-logo-section">
+        <!-- Content Boxes on top of the background image -->
+        <div class="main-container">
+            <div class="inner-box accommodation">
+              <h2>Accommodations</h2>
+              <p>Details about tent options, Airbnb, and guest homes...</p>
+            </div>
+            
+            <div class="inner-box transportation">
+              <h2>Transportation</h2>
+              <p>Information on flight options, links to airlines...</p>
+            </div>
+          
+            <div class="inner-box event-pricing">
+              <h2>Event Pricing</h2>
+              <p>Details about ticket pricing, activities, and all-inclusive options...</p>
+            </div>
+          
+            <div class="inner-box sponsors">
+              <h2>Sponsorship Opportunities</h2>
+              <p>Details about sponsorship tiers, benefits, and contributions...</p>
+            </div>
+            
+            <div class="inner-box shopping-cart">
+              <h2>Shopping Cart</h2>
+              <p>Here you can confirm your purchase and proceed to payment...</p>
+            </div>
+            <div class="inner-box shopping-cart">
+                <h2>Shopping Cart</h2>
+                <p>Here you can confirm your purchase and proceed to payment...</p>
+              </div>
+       
+    </section>
+    <header>
+        <section id="accommodations">
+            <div class="border-wrapper accommodations-section">
+                <h2 class="accommodations-title">Choose Your Accommodations</h2>
+                <form id="accommodation-form">
+                    <label for="accommodation-type">Select Accommodation Type:</label>
+                    <select id="accommodation-type" name="accommodation-type" onchange="updatePrice()">
+                        <option value="3000">Standard Room - $3000</option>
+                        <option value="3200">Deluxe Room - $3200</option>
+                        <option value="3500">Suite - $3500</option>
+                    </select>
+        
+                    <div id="price-display">
+                        <p>Price: <span id="price">$3000</span></p>
+                    </div>
+        
+                    <!-- Book Now Button -->
+                    <button type="submit" formaction="/checkout.html">Book Now</button>
+                    
+                    <!-- Add to Cart Button -->
+                    <button type="button" onclick="addToCart()">Add to Cart</button>
+                </form>
+                
+                <!-- Optional link to continue shopping -->
+                <p><a href="/shop.html">Continue Shopping</a></p>
+            </div>
+        </section>
+        
+        <section id="content-boxes-area">
+            <div class="border-wrapper content-boxes-wrapper">
+                <div class="content-box"></div>
+                <div class="content-box"></div>
+                <div class="content-box"></div>
+                <div class="content-box"></div>
+                <div class="content-box"></div>
+                <div class="content-box"></div>
+                <div class="content-box"></div>
+                <div class="content-box"></div>
+                <div class="content-box"></div>
+            </div>
+        </section>
+        
+        <script>
+            function addToCart() {
+                var selectElement = document.getElementById('accommodation-type');
+                var selectedValue = selectElement.options[selectElement.selectedIndex].text;
+                alert(selectedValue + " has been added to your cart!");
+        
+                // Redirect to shopping cart page
+                window.location.href = "/cart.html";
+            }
+        </script>
+        
+        <div class="content-box">
+            <h2>Box 1</h2>
+            <p>This is the first content box over the background logo.</p>
+        </div>
+        <div class="content-box">
+            <h2>Box 2</h2>
+            <p>This is the second content box over the background logo.</p>
+        </div>
+        <div class="content-box">
+            <h2>Box 3</h2>
+            <p>This is the third content box over the background logo.</p>
+        </div>
+        <div class="content-boxes-section">
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+        </div>
+    </section>
+    <main>
+        
+        <section id="photo-gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="https://raw.githubusercontent.com/MyAlkalineVeganJourney/J2E/main/J2E%20logo.png" alt="J2ELogo">
+                <img src="https://raw.githubusercontent.com/MyAlkalineVeganJourney/J2E/main/DBRoad.jpg" alt="Des Barres Road">
+                <img src="https://raw.githubusercontent.com/MyAlkalineVeganJourney/J2E/main/BigTent.jpeg" alt="Big Tent">
+                <img src="https://raw.githubusercontent.com/MyAlkalineVeganJourney/J2E/main/ResTents.jpeg" alt="Res Tents">
+                <img src="https://raw.githubusercontent.com/MyAlkalineVeganJourney/J2E/main/Diving in St. Thomas.jpg" alt="Dive">
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Alkaline Vegan Journey. All rights reserved.</p>
+        <div class="social-media-links">
+            <a href="https://www.youtube.com/@myalkalineveganjourney7465" target="_blank">YouTube</a>
+            <a href="https://www.tiktok.com/@myalkalineveganjourney" target="_blank">TikTok</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
