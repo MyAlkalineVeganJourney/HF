@@ -11,7 +11,7 @@
             const images = document.querySelectorAll('img');
             images.forEach(image => {
                 const src = image.getAttribute('src');
-                if (src && src.startsWith('https://raw.githubusercontent.com/MyAlkalineVeganJourney/J2E/main/')) {
+                if (src && src.startsWith('https://raw.githubusercontent.com/MyAlkalineVeganJourney/HF/main/')) {
                     image.setAttribute('src', src.replace('main/', 'Images/'));
                 }
             });
