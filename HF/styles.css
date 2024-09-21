@@ -108,7 +108,7 @@ body {
 
 /* Content Boxes Positioned Over the Background Logo */
 .content-box {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the content boxes */
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background for the content boxes */
     color: white;
     padding: 20px;
     border-radius: 10px; 
@@ -254,7 +254,7 @@ footer p {
 /* Grid-based layout */
 .main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     gap: 20px;
     position: relative;
     margin-top: -50px; /* Overlaying logo slightly */
@@ -528,7 +528,7 @@ footer p {
 .box-container {
     display: flex;
     justify-content: space-between; /* This spreads the boxes evenly */
-    flex-wrap: wrap; /* If the page gets too narrow, the boxes will wrap to the next line */
+    flex-wrap: nowrap; /* If the page gets too narrow, the boxes will wrap to the next line */
     width: 100%;
 }
 

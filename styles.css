@@ -108,7 +108,7 @@ body {
 
 /* Content Boxes Positioned Over the Background Logo */
 .content-box {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the content boxes */
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background for the content boxes */
     color: white;
     padding: 20px;
     border-radius: 10px; 
