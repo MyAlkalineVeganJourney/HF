@@ -254,7 +254,7 @@ footer p {
 /* Grid-based layout */
 .main-container {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     position: relative;
     margin-top: -50px; /* Overlaying logo slightly */
@@ -528,7 +528,7 @@ footer p {
 .box-container {
     display: flex;
     justify-content: space-between; /* This spreads the boxes evenly */
-    flex-wrap: nowrap; /* If the page gets too narrow, the boxes will wrap to the next line */
+    flex-wrap: wrap; /* If the page gets too narrow, the boxes will wrap to the next line */
     width: 100%;
 }
 
