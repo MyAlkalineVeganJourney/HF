@@ -3,7 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Black background */
+    background-color: #000; /* Black background for non-logo containers */
     color: #fff; /* White text for contrast */
 }
 
@@ -24,7 +24,7 @@ body {
 
 /* Background image and title section */
 .background-image {
-    background-image: url('images/logo.png');
+    background-image: url('images/logo.png'); /* Ensures the logo background for the two containers */
     background-size: cover;
     background-position: center;
     padding: 50px 0;
@@ -52,10 +52,7 @@ body {
     
     /* Multicolored border using gradients */
     border: 8px solid;
-     /* Multicolored border using gradients */
-     border: 8px solid;
-     border-image: linear-gradient(to right, #FF0000, #FFD700, #008000, blue, indigo, violet) 1; /* Red, Gold, Green gradient */
- 
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000, blue, indigo, violet) 1; /* Red, Gold, Green gradient */
 }
 
 .MAVJDigitalLogo {
@@ -192,6 +189,73 @@ main p {
     line-height: 1.6;
 }
 
+/* Container for Three Content Boxes */
+#three-content-boxes-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    background-image: url('https://raw.githubusercontent.com/MyAlkalineVeganJourney/HF/main/Images/MAVJDigitalLogo.JPG');
+    background-size: cover;
+    border: 8px solid;
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000, blue, indigo, violet) 1;
+    border-radius: 10px;
+}
+
+.three-content-box {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 8px solid;
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000, blue, indigo, violet) 1;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.three-content-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for Six Inner Content Boxes */
+#six-inner-content-boxes-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    background-image: url('https://raw.githubusercontent.com/MyAlkalineVeganJourney/HF/main/Images/MAVJDigitalLogo.JPG');
+    background-size: cover;
+    border: 8px solid;
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000, blue, indigo, violet) 1;
+    border-radius: 10px;
+}
+
+.inner-content-box {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    min-width: 200px;
+    background-color: #f0f0f0;
+    border: 8px solid;
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000, blue, indigo, violet) 1;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inner-content-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+    
 /* Video and photo gallery styles */
 .video-container, .gallery {
     display: flex;
@@ -199,7 +263,7 @@ main p {
     gap: 20px;
     flex-wrap: wrap;
     border: 8px solid;
-    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000,blue, indigo, violet) 1; /* Red, Gold, Green gradient */
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000, blue, indigo, violet) 1;
 }
 
 video, .gallery img {
@@ -218,438 +282,122 @@ footer {
     padding: 20px 0;
     margin-top: 20px;
     border: 8px solid;
-    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000,blue, indigo, violet) 1; /* Red, Gold, Green gradient */
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000, blue, indigo, violet) 1;
 }
-
-footer p {
-    margin: 0;
-}
-
-.social-media-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.social-media-links a:hover {
-    text-decoration: underline;
-}
-
-/* Grid-based layout */
+/* Base styles for all main containers */
 .main-container {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 20px;
-    position: relative;
-    margin-top: -50px; /* Overlaying logo slightly */
+    width: 100%;
     padding: 20px;
-}
-
-/* Inner Box Styles */
-.inner-box {    border: 2px solid #d4af37; /* Metallic gold border */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(212, 175, 55, 0.6); /* Soft gold shadow */
-    transition: all 0.3s ease-in-out;
     border: 8px solid;
-    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000,blue, indigo, violet) 1; /* Red, Gold, Green gradient */
-}
-
-.inner-box h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #d4af37; /* Metallic gold titles */
-    margin-bottom: 15px;
-}
-
-.inner-box p {
-    font-family: 'Open Sans', sans-serif;
-    color: #bfbfbf; /* Light gray text for readability */
-}
-
-/* Inner Box Types */
-.inner-box.accommodation {
-    border-left: 8px solid #008000; /* Green accent for accommodations */
-}
-
-.inner-box.transportation {
-    border-left: 5px solid #ff0000; /* Red accent for transportation */
-}
-
-.inner-box.event-pricing {
-    border-left: 5px solid #ffcc00; /* Yellow accent for event pricing */
-}
-
-.inner-box.sponsors {
-    border-left: 5px solid #008000; /* Green accent for sponsors */
-}
-
-.inner-box.shopping-cart {
-    border-left: 5px solid #ff0000; /* Red accent for shopping cart */
-}
-
-/* Hover Effects */
-.inner-box:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly brighter on hover */
-    transform: scale(1.02); /* Subtle scale effect */
-    transition: all 0.3s ease-in-out;
-}
-/* Multicolor border style */
-.multicolor-border {
-    border: 4px solid;
-    border-image-slice: 1;
-    border-width: 4px;
-    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-}
-
-/* Accommodations section styling */
-.accommodations-section {
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 1200px;
-    border-radius: 8px;
-    border: 8px solid;
-    border-image-slice: 1;
-    border-width: 8px;
-    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-}
-
-.accommodations-title {
-    color: white;
-    font-size: 24px;
-    margin-bottom: 20px;
-    display: inline-block;
-    padding: 10px;
-}
-
-/* Content boxes section styling */
-.content-boxes-section {
-    background-color: black;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 900px;
-    border-radius: 8px;
-    border: 4px solid;
-    border-image-slice: 1;
-    border-width: 8px;
-    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-}
-
-/* Content boxes styling */
-.content-boxes-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-}
-
-.content-box {
-    background-color: black;
-    height: 150px;
-    border-radius: 8px;
-    border: 2px solid white;
-}
-/* Multicolored border */
-.border-wrapper, .content-boxes-wrapper {
-    border: 4px solid transparent;
-    background-image: linear-gradient(black, black),
-                      linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-/* Accommodations Section */
-#accommodations {
-    background-color: black;
-    padding: 40px 20px;
-}
-
-#accommodations h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-}
-
-#accommodation-form {
-    text-align: center;
-    color: rgb(44, 99, 9);
-}
-
-#accommodation-form label, 
-#accommodation-form select, 
-#accommodation-form button {
-    display: block;
-    margin: 10px auto;
-}
-
-#accommodation-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#accommodation-form button:hover {
-    background-color: #555;
-}
-
-#accommodation-form p a {
-    color: white;
-    text-decoration: underline;
-}
-/* Multicolored border */
-.border-wrapper {
-    border: 4px solid transparent;
-    background-image: linear-gradient(black, black),
-                      linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    padding: 20px;
-    margin-bottom: 40px;
-}
-
-/* Accommodations Section */
-#accommodations {
-    background-color: black;
-    padding: 40px 20px;
-    margin-bottom: 20px;
-}
-
-.accommodations-section {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-#accommodations h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-}
-
-#accommodation-form {
-    text-align: center;
-    color: white;
-}
-
-#accommodation-form label, 
-#accommodation-form select, 
-#accommodation-form button {
-    display: block;
-    margin: 10px auto;
-}
-
-#accommodation-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#accommodation-form button:hover {
-    background-color: #555;
-}
-
-#accommodation-form p a {
-    color: white;
-    text-decoration: underline;
-}
-
-/* Content Boxes Area */
-#content-boxes-area {
-    background-color: black;
-    padding: 40px 20px;
-}
-
-.content-boxes-wrapper {
-    display: grid;
-    gap: 30px;
-}
-
-.content-box {
-    background-color: black;
-    border: 4px solid transparent;
-    background-image: linear-gradient(black, black),
-                      linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    height: 180px;
-}
-
-/* Menu Bar */
-.menu-bar {
-    background-color: #000000; /* Update to true black */
-}
-
-/* Content Boxes Area */
-#content-boxes-area {
-    background-color: black;
-    padding: 40px 20px;
-}
-
-.content-boxes-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.content-box {
-    background-color: rgb(248, 242, 242);
-    border: 4px solid transparent;
-    background-image: linear-gradient(black, black),
-                      linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    height: 150px;
-}
-/* Container for the three boxes */
-.box-container {
-    display: flex;
-    justify-content: space-between; /* This spreads the boxes evenly */
-    flex-wrap: nowrap; /* If the page gets too narrow, the boxes will wrap to the next line */
-    width: 100%;
-}
-
-/* Individual box styles */
-.box {
-    width: 30%; /* Set each box to take up 30% of the container */
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* Fix for the nine boxes */
-.footer-box-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.footer-box {
-    width: 30%; /* 30% width for three boxes per row */
-    padding: 15px;
-    box-sizing: border-box;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-.buy-now-btn button {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-}
-
-.buy-now-btn button:hover {
-    background-color: #45a049;
-}
-.buy-now-btn button {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-}
-
-.buy-now-btn button:hover {
-    background-color: #45a049;
-}
-
-
-
-.header-btn:hover {
-    background-color: #45a049;
-}
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fix for Accommodations Section Background */
-.accommodations-section {
-    background-image: url('path_to_logo_image');
-    background-size: cover;
-    padding: 50px;
-    text-align: center;
-    color: white; /* Ensure text stands out on background */
-    border: 3px solid #00ff00; /* Example multicolored border */
-    margin: 20px auto;
-    max-width: 800px; /* Restricting width to fix layout */
-}
-
-/* Button Styling */
-button {
-    background-color: #ff6347;
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ff4500;
-}
-
-/* Header Button Specific Styles */
-.header-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-/* Accommodation Form */
-#accommodation-form select {
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#price-display p {
-    font-size: 20px;
-    color: #00ff00;
-}
-/* Background Logo Section */
-.background-logo-section {
-    background-image: url('https://raw.githubusercontent.com/MyAlkalineVeganJourney/HF/images/MAVJDigitalLogo.JPG');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%; /* Takes the full width of the page */
-    padding: 50px 0;
-    position: relative;
+    border-image: linear-gradient(to right, #FF0000, #FFD700, #008000, blue, indigo, violet) 1;
+    margin-bottom: 20px; /* Ensure containers don't overlap */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    height: auto; /* Adjust the height as necessary */
+}
+
+/* Header Container */
+#header-container {
+    background-image: url('https://raw.githubusercontent.com/MyAlkalineVeganJourney/HF/main/Images/MAVJDigitalLogo.JPG');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Individual Content Box Styles */
+.inner-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Accommodations Container */
+#accommodations-container {
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Transportation Container */
+#transportation-container {
+    background-color: #e9ecef; /* Light grey background */
+}
+
+/* Event Pricing Container */
+#event-pricing-container {
+    background-color: #f1f3f5; /* Slightly darker grey */
+}
+
+/* Sponsorship Container */
+#sponsorship-container {
+    background-color: #dee2e6; /* Slightly darker grey */
+}
+
+/* Shopping Cart Container */
+#shopping-cart-container {
+    background-color: #ced4da; /* Slightly darker grey */
+}
+
+/* Communal Residency Container */
+#communal-residency-container {
+    background-color: #adb5bd; /* Slightly darker grey */
+}
+/* Container for the three boxes */
+.left-boxes-container {
+    display: flex;
+    flex-direction: column; /* Aligns the boxes vertically */
+    justify-content: space-between; /* Ensures equal spacing between the boxes */
+    position: absolute;
+    left: 0; /* Aligns the boxes to the far left of the title section */
+    top: 50%; /* Vertically centers the box container */
+    transform: translateY(-50%); /* Adjusts for perfect vertical centering */
+}
+
+/* Style for each box */
+.box {
+    width: 200px; /* Set the width for each box */
+    border: 3px solid; /* Multicolored border for each box */
+    border-image: linear-gradient(to right, red, yellow, green, blue) 1;
+    padding: 10px;
+    margin-bottom: 20px; /* Space between boxes */
+    text-align: center; /* Center-align the text inside the box */
+}
+
+.box-image {
+    width: 100%; /* Makes the image fit the box perfectly */
+    height: auto;
+}
+
+.box h2 {
+    font-size: 18px; /* Adjust text size inside the box */
+    color: black;
+}
+
+/* Hover Effect */
+.box:hover {
+    transform: scale(1.05); /* Enlarges the box slightly on hover */
+    transition: transform 0.3s ease;
+}
+
+/* Title Section (remains unchanged, just ensuring the positioning remains proper) */
+.title-section {
+    position: relative;
+    border: 5px solid;
+    border-image: linear-gradient(to right, red, yellow, green, blue) 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.MAVJDigitalLogo {
+    width: 150px;
+    height: auto;
 }

@@ -1,0 +1,23 @@
+{
+  "name": "my-alkaline-vegan-journey",
+  "version": "1.0.0",
+  "description": "My Alkaline Vegan Journey Website",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install --prefix Frontend && npm install --prefix Backend",
+    "start": "concurrently \"npm start --prefix Frontend\" \"npm start --prefix Backend\""
+  },
+  "dependencies": {
+    "@sentry/utils": "^8.34.0",
+    "@stripe/react-stripe-js": "^2.8.1",
+    "@stripe/stripe-js": "^4.8.0",
+    "axios": "^1.7.7",
+    "concurrently": "^9.0.1",
+    "dotenv": "^16.4.5",
+    "react-router-dom": "^6.27.0",
+    "stripe": "^17.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
